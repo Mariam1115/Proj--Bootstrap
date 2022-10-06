@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:auto;
+    font-family: 'Courgette' !important;
+    background-color: #777 !important;
+}
+
+.nav-link{
+    color: white !important; 
+}
+
+.navbar{
+    background: -webkit-linear-gradient(top left ,#002B5B, #385878) !important;
+}
+.navbar-brand:hover{
+    text-shadow: 6px 6px 8px #fff, -6px -6px 8px #fff;
+}
+
+/* ////// */
+.card-header .programming-title .btn-link::after{
+    content: ' \2717';
+    float: right;
+    font-weight: bold;
+}
+.card-header .programming-title .btn-link.collapsed::after{
+    content: ' \2713';
+}
+.card-header:hover{
+    background-color: #051c33;
+}
+.card-header:hover .btn{
+    color: #fff !important;
+}
+/* // */
+h1{
+    color: #04172d !important ;
+    font-size: 42px !important;
+    text-shadow: 4px 4px 7px #021428;
+    
+}
+/* /// */
+.card-body .code1 a:hover{
+    color: #fff !important;
+}
+
+/* copyy */
+.btncopy{
+    position: relative;
+    left: 35px;
+}
+.btncopy::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style: solid;
+border-color: transparent transparent rgb(93, 189, 222) transparent;
+top: 19px;
+left: 14px;
+display: none;
+}
+.btncopy::after{
+position: absolute;
+content: " ";
+display: none;
+width: 80px;
+height: 45px;
+top: 38px;
+left: -15px;
+background-color: rgb(93, 189, 222);
+border-radius: 6px;
+}
+.btncopy:active::before{
+    display:block;
+}
+.btncopy:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btncopy:active::after{
+    content: "copied";
+    display: block;
+    height: 30px;
+}
+.btn:hover::before{
+    display: block;
+}
+/* ///// images fixed //// */
+.image-fixed , .fixed-img{
+    height: 250px;
+    background-image:url(../images/e1c583d1b52282c923d499d92838ae97.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fixed-img{
+    background-image: url(../images/a074a1da0a79e132041d4c5f95d244e6.jpg);
+}
+/* //// */
+.card-icon:hover{
+    color: none;
+}
+/* /////////// */
